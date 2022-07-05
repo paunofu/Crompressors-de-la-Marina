@@ -6,20 +6,19 @@
 
 <title>Compressors d'aire a la Marina</title>
 
-<!-- Se referencia la hoja de estilos de JavaScript -->
+
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
 
-<!-- Se referencia el archivo JavaScript de Leaflet -->
+
 <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 
-<!-- Se referencian las hojas de estilos de la extensión Leaflet.markercluster -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.0/dist/MarkerCluster.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.0/dist/MarkerCluster.Default.css" />
 
-<!-- Se referencia el archivo JavaScript de la extensión Leaflet.markercluster -->
+
 <script src="https://unpkg.com/leaflet.markercluster@1.4.0/dist/leaflet.markercluster.js"></script>
 
-<!-- Se referencia el archivo de datos externos -->
+
 <script src="compressors-de-pagament.geojson"></script>
 <script src="compressors-gratuits-gratuits.geojson"></script>
 <style>
@@ -66,13 +65,13 @@ var osmcarto = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 
 	L.control.layers(baseLayers).addTo(map);
 
-		// Se crea un icono personalizado
+		
 		var paidcompressor = L.icon({
 			iconUrl: 'compressor-red.svg',
 			iconSize: [40,40]
 			});;
 
-	// Se crea una capa de datos con marcadores y ventana emergente personalizados
+	
 		var compressordepago = L.geoJson(paid, {
 			pointToLayer: function(feature,latlng){
 			var marker = L.marker(latlng,{icon: paidcompressor});
@@ -80,13 +79,13 @@ var osmcarto = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 			return marker;
 			}});
 
-	// Se crea un icono personalizado
+	
 	var freecompressor = L.icon({
 			iconUrl: 'compressor-greenv2.svg',
 			iconSize: [40,40]
 			});;
 
-	// Se crea una capa de datos con marcadores y ventana emergente personalizados
+	
 		var compressorfree = L.geoJson(free, {
 			pointToLayer: function(feature,latlng){
 			var marker = L.marker(latlng,{icon: freecompressor});
@@ -94,7 +93,7 @@ var osmcarto = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 			return marker;
 			}});
 
-	// Se crea y añade una capa de agrupación de marcadores   		
+	 		
 		var clusters = L.markerClusterGroup({ showCoverageOnHover: false });
 		clusters.addLayer(compressorfree);
 		clusters.addLayer(compressordepago);
