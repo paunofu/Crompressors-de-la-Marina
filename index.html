@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Compressors d'aire a la Marina</title>
+
+<!-- Se referencia la hoja de estilos de JavaScript -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+
+<!-- Se referencia el archivo JavaScript de Leaflet -->
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+<!-- Se referencian las hojas de estilos de la extensión Leaflet.markercluster -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.0/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.0/dist/MarkerCluster.Default.css" />
+
+<!-- Se referencia el archivo JavaScript de la extensión Leaflet.markercluster -->
+<script src="https://unpkg.com/leaflet.markercluster@1.4.0/dist/leaflet.markercluster.js"></script>
+
+<!-- Se referencia el archivo de datos externos -->
+<script src="compressors-de-pagament.geojson"></script>
+<script src="compressors-gratuits-gratuits.geojson"></script>
+<style>
+body {margin: 0; pad: 0; }
+#map {position: absolute; top: 0; bottom: 0; width: 100%;}
+</style>
+
+</head>
+
+<body>
+
+    <div id="map"></div>
+
+<script>
+
+var osmcarto = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+			attribution: 'Dades &copy; <a href="http://osm.org/copyright" target="blanck">Colaboradores de OpenStreetMap</a> (<a href="http://www.openstreetmap.org/copyright" target="blanck">ODbL</a>) | Tesseles <a href="https://github.com/gravitystorm/openstreetmap-carto" target="blanck">OSM Carto</a> | Icones <a href="https://github.com/streetcomplete/StreetComplete/blob/master/res/graphics/pins/car_air_compressor.svg" target="blanck">westnordost</a> '
+		}),
+		pnoa = L.tileLayer.wms("http://www.ign.es/wms-inspire/pnoa-ma?SERVICE=WMS&", {
+			layers: "OI.OrthoimageCoverage",
+			transparent: true,
+			format: 'image/jpeg',
+			version: '1.3.0',
+			attribution: 'Ortofotos <a href="http://www.scne.es/productos.html#OrtoPNOA" target="blanck">PNOA</a> \u00a9 <a href="http://www.ign.es" target="blanck">Instituto Geográfico Nacional de España</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode.es" target="blanck">CC BY 4.0</a>)'
+		});
+		icv = L.tileLayer.wms("http://terramapas.icv.gva.es/odcv05_etrs89h30_2020", {
+			layers: "OI.OrthoimageCoverage",
+			transparent: true,
+			format: 'image/jpeg',
+			version: '1.3.0'
+		});
+
+	var map = L.map('map', {
+		center: [38.70, 0.1086],
+		zoom: 11,
+		layers: [osmcarto]
+	});
+
+	var baseLayers = {
+		"Carrerer (OSM)": osmcarto,
+		"Ortofotos (IGN)": pnoa,
+		"Ortofotos (ICV)": icv
+	};
+
+	L.control.layers(baseLayers).addTo(map);
+
+		// Se crea un icono personalizado
+		var paidcompressor = L.icon({
+			iconUrl: 'compressor-red.svg',
+			iconSize: [40,40]
+			});;
+
+	// Se crea una capa de datos con marcadores y ventana emergente personalizados
+		var compressordepago = L.geoJson(paid, {
+			pointToLayer: function(feature,latlng){
+			var marker = L.marker(latlng,{icon: paidcompressor});
+			marker.bindPopup("Compressor de Pagament");
+			return marker;
+			}});
+
+	// Se crea un icono personalizado
+	var freecompressor = L.icon({
+			iconUrl: 'compressor-greenv2.svg',
+			iconSize: [40,40]
+			});;
+
+	// Se crea una capa de datos con marcadores y ventana emergente personalizados
+		var compressorfree = L.geoJson(free, {
+			pointToLayer: function(feature,latlng){
+			var marker = L.marker(latlng,{icon: freecompressor});
+			marker.bindPopup("Compressor Debades");
+			return marker;
+			}});
+
+	// Se crea y añade una capa de agrupación de marcadores   		
+		var clusters = L.markerClusterGroup({ showCoverageOnHover: false });
+		clusters.addLayer(compressorfree);
+		clusters.addLayer(compressordepago);
+		map.addLayer(clusters);
+</script>
+
+</body>
+
+</html>

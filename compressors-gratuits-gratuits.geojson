@@ -1,0 +1,109 @@
+var free=
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2022-06-28T14:20:11Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9721705060",
+        "amenity": "compressed_air",
+        "fee": "no",
+        "operator": "Petrocar Levante SL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0893501,
+          38.8349887
+        ]
+      },
+      "id": "node/9721705060"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9778988912",
+        "amenity": "compressed_air",
+        "fee": "no",
+        "operator": "Hello Lowcost SL."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0185803,
+          38.8180853
+        ]
+      },
+      "id": "node/9778988912"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9779074841",
+        "amenity": "compressed_air",
+        "fee": "no",
+        "operator": "Carrefour"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0207799,
+          38.8179372
+        ]
+      },
+      "id": "node/9779074841"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9796393081",
+        "amenity": "compressed_air",
+        "fee": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0846121,
+          38.8375377
+        ]
+      },
+      "id": "node/9796393081"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9796422411",
+        "amenity": "compressed_air",
+        "fee": "no",
+        "operator": "Combusella"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.040331,
+          38.7986193
+        ]
+      },
+      "id": "node/9796422411"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9850375125",
+        "amenity": "compressed_air",
+        "fee": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1724733,
+          38.5337499
+        ]
+      },
+      "id": "node/9850375125"
+    }
+  ]
+}

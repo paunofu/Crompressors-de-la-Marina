@@ -1,0 +1,226 @@
+var paid=
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2022-06-28T14:06:03Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9008320647",
+        "access": "yes",
+        "amenity": "compressed_air",
+        "charge": "1 EUR",
+        "covered": "no",
+        "fee": "yes",
+        "operator": "CRED Dénia",
+        "payment:coins": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0979816,
+          38.8393799
+        ]
+      },
+      "id": "node/9008320647"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9733600891",
+        "access": "yes",
+        "amenity": "compressed_air",
+        "charge": "1 EUR",
+        "covered": "yes",
+        "fee": "yes",
+        "operator": "E.S. La Palmera",
+        "payment:coins": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1019432,
+          38.832677
+        ]
+      },
+      "id": "node/9733600891"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9755753020",
+        "amenity": "compressed_air",
+        "charge": "1 EUR",
+        "fee": "yes",
+        "payment:coins": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0944615,
+          38.8388309
+        ]
+      },
+      "id": "node/9755753020"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9786870694",
+        "amenity": "compressed_air",
+        "charge": "1 EUR",
+        "fee": "yes",
+        "operator": "Kuwait Petroleum International",
+        "payment:cash": "yes",
+        "payment:coins": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1718346,
+          38.7891389
+        ]
+      },
+      "id": "node/9786870694"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9791421583",
+        "amenity": "compressed_air",
+        "charge": "1 EUR",
+        "covered": "no",
+        "fee": "yes",
+        "operator": "Shell",
+        "payment:coins": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1132895,
+          38.8339733
+        ]
+      },
+      "id": "node/9791421583"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9798798678",
+        "amenity": "compressed_air",
+        "charge": "1 EUR",
+        "covered": "no",
+        "fee": "yes",
+        "operator": "CRED Pedreguer",
+        "payment:coins": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0382123,
+          38.7994856
+        ]
+      },
+      "id": "node/9798798678"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9829311112",
+        "amenity": "compressed_air",
+        "covered": "yes",
+        "fee": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0147582,
+          38.8281932
+        ]
+      },
+      "id": "node/9829311112"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9829311113",
+        "amenity": "compressed_air",
+        "fee": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0216816,
+          38.822149
+        ]
+      },
+      "id": "node/9829311113"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9829443253",
+        "amenity": "compressed_air",
+        "fee": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.056864,
+          38.8585477
+        ]
+      },
+      "id": "node/9829443253"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9850373288",
+        "amenity": "compressed_air",
+        "fee": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1727809,
+          38.5331313
+        ]
+      },
+      "id": "node/9850373288"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9850588515",
+        "amenity": "compressed_air",
+        "fee": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1728295,
+          38.5388363
+        ]
+      },
+      "id": "node/9850588515"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9851196534",
+        "amenity": "compressed_air",
+        "fee": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0984109,
+          38.7681313
+        ]
+      },
+      "id": "node/9851196534"
+    }
+  ]
+}
