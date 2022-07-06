@@ -44,11 +44,8 @@ var osmcarto = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 			version: '1.3.0',
 			attribution: 'Ortofotos <a href="http://www.scne.es/productos.html#OrtoPNOA" target="blanck">PNOA</a> \u00a9 <a href="http://www.ign.es" target="blanck">Instituto Geográfico Nacional de España</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode.es" target="blanck">CC BY 4.0</a>)'
 		});
-		icv = L.tileLayer.wms("http://terramapas.icv.gva.es/odcv05_etrs89h30_2020", {
-			layers: "OI.OrthoimageCoverage",
-			transparent: true,
-			format: 'image/jpeg',
-			version: '1.3.0'
+		icv = L.tileLayer("https://terramapas.icv.gva.es/0202_2021CVAL0025_3857/wmts/1.0.0/01_8bits_01_RGB_05_PNG/default/GMEPSG3857/{z}/{y}/{x}.png", {
+			attribution: 'Ortofotografia <a href="https://icv.gva.es/va/condiciones-de-uso-de-la-geoinformacion-icv" target="blanck">ICV</a> \u00a9 <a href="https://icv.gva.es/va/" target="blanck">Instituto Geográfico Nacional de España</a>'
 		});
 
 	var map = L.map('map', {
