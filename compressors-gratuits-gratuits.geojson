@@ -3,7 +3,7 @@ var free=
   "type": "FeatureCollection",
   "generator": "overpass-ide",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2022-06-28T14:20:11Z",
+  "timestamp": "2022-07-10T18:06:05Z",
   "features": [
     {
       "type": "Feature",
@@ -88,6 +88,186 @@ var free=
         ]
       },
       "id": "node/9796422411"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9873241470",
+        "amenity": "compressed_air",
+        "fee": "no",
+        "note:fee": "El cost és gratuït però s'ha de depositar una fiança de 50 cèntims que després es torna",
+        "note:fee:ca": "El cost és gratuït però s'ha de depositar una fiança de 50 cèntims que després es torna",
+        "note:fee:en": "The cost is free but a deposit of 50 cents must be deposited",
+        "note:fee:es": "El coste es gratuito pero es necesario depositar una fianza de 50 céntimos que después se devolverá"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0995255,
+          38.8484376
+        ]
+      },
+      "id": "node/9873241470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9875459383",
+        "amenity": "compressed_air",
+        "fee": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.167525,
+          38.7878448
+        ]
+      },
+      "id": "node/9875459383"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9876496707",
+        "amenity": "compressed_air",
+        "fee": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0415829,
+          38.8519769
+        ]
+      },
+      "id": "node/9876496707"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9876529663",
+        "amenity": "compressed_air",
+        "fee": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1067609,
+          38.8435731
+        ]
+      },
+      "id": "node/9876529663"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9876561793",
+        "amenity": "compressed_air",
+        "fee": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0598543,
+          38.7175296
+        ]
+      },
+      "id": "node/9876561793"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9876571813",
+        "amenity": "compressed_air",
+        "fee": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0622364,
+          38.7714138
+        ]
+      },
+      "id": "node/9876571813"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9876623736",
+        "amenity": "compressed_air",
+        "fee": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0420704,
+          38.7521126
+        ]
+      },
+      "id": "node/9876623736"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9876660961",
+        "amenity": "compressed_air",
+        "fee": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0451645,
+          38.7131209
+        ]
+      },
+      "id": "node/9876660961"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9876662469",
+        "amenity": "compressed_air",
+        "fee": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0596269,
+          38.7186324
+        ]
+      },
+      "id": "node/9876662469"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9877023942",
+        "amenity": "compressed_air",
+        "fee": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1507941,
+          38.7405758
+        ]
+      },
+      "id": "node/9877023942"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9877023951",
+        "amenity": "compressed_air",
+        "fee": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.151933,
+          38.7390509
+        ]
+      },
+      "id": "node/9877023951"
     },
     {
       "type": "Feature",
