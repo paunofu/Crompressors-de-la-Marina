@@ -502,6 +502,23 @@ var paid=
         ]
       },
       "id": "node/9850588515"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9887578270",
+        "amenity": "compressed_air",
+        "charge": "1 EUR",
+        "fee": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0530224,
+          38.7972047
+        ]
+      },
+      "id": "node/9887578270"
     }
   ]
 }
