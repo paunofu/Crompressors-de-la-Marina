@@ -6,7 +6,7 @@ Estic seguit el repositori [despliega tu mapa](https://github.com/dcapillae/desp
 
 ## Copyrigt
 
-Les dades s'extrauen d'[OpenStretMap](https://www.openstreetmap.org/copyright) amb la ferramenta [OverppasTurbo](http://overpass-turbo.eu/).
+Les dades s'extrauen d'[OpenStretMap](https://www.openstreetmap.org/copyright) amb la ferramenta [OverpasTurbo](http://overpass-turbo.eu/).
 
 Les imatges de fons son d'[OpenStretMap](https://www.openstreetmap.org/copyright), del [Instituto Cartográfico Nacional](https://www.ign.es/web/ign/portal) i l'[Institut Cartogràfic Valencià](https://icv.gva.es/va/condiciones-de-uso-de-la-geoinformacion-icv).
 
