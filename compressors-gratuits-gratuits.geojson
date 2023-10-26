@@ -272,6 +272,22 @@ var free=
     {
       "type": "Feature",
       "properties": {
+        "@id": "node/10593046471",
+        "amenity": "compressed_air",
+        "fee": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0630837,
+          38.7899047
+        ]
+      },
+      "id": "node/10593046471"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "@id": "node/9850375125",
         "amenity": "compressed_air",
         "fee": "no"
