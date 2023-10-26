@@ -131,7 +131,14 @@ var paid=
         "@id": "node/9829311112",
         "amenity": "compressed_air",
         "covered": "yes",
-        "fee": "yes"
+        "fee": "yes",
+        "payment:cash": "yes",
+        "payment:coins": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "payment:visa_electron": "yes"
       },
       "geometry": {
         "type": "Point",
